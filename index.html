@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    /* Prevent horizontal scroll */
+    body, html {
+      overflow-x: hidden;
+    }
+
+    /* Ensure all sections fit inside the viewport */
+    section {
+      width: 100vw;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-gray-800 fixed w-full z-50 shadow-lg">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+      <a href="#" class="text-2xl font-bold text-teal-400">MyPortfolio</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#about" class="hover:text-teal-500">About</a></li>
+        <li><a href="#skills" class="hover:text-teal-500">Skills</a></li>
+        <li><a href="#projects" class="hover:text-teal-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-teal-500">Contact</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl text-teal-500 focus:outline-none">
+        ☰
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden flex-col bg-gray-800 space-y-4 text-center md:hidden">
+      <li><a href="#about" class="block py-2 hover:text-teal-500">About</a></li>
+      <li><a href="#skills" class="block py-2 hover:text-teal-500">Skills</a></li>
+      <li><a href="#projects" class="block py-2 hover:text-teal-500">Projects</a></li>
+      <li><a href="#contact" class="block py-2 hover:text-teal-500">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center bg-[url('https://images.pexels.com/photos/19212126/pexels-photo-19212126/free-photo-of-nature-wallpaper.jpeg?auto=compress&cs=tinysrgb&w=600')] bg-no-repeat  bg-cover text-center">
+    <div data-aos="fade-up" class="px-4 max-w-full">
+      <h1 class="text-4xl md:text-7xl font-extrabold leading-tight">Hi, I'm <span class="text-yellow-300">Sneha NV</span></h1>
+      <p class="mt-4 text-lg md:text-xl">A Passionate Web Developer</p>
+      <a href="#contact" class="mt-8 inline-block bg-yellow-300 text-gray-900 px-6 py-3 rounded-lg font-medium shadow-lg hover:bg-yellow-400">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-right">About Me</h2>
+      <p class="text-lg leading-7 max-w-3xl mx-auto">I am a passionate and quick-learning full-stack developer, currently specializing in the MEARN stack, with a strong foundation in HTML, CSS, JavaScript, React, Angular and responsive design. I have built several dynamic web applications . My projects emphasize creativity, functionality, and user experience, reflecting my commitment to crafting impactful digital solutions. I thrive on exploring new technologies and continuously improving my skills.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10" data-aos="fade-left">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div data-aos="zoom-in">
+          <div class="text-5xl text-teal-400">🌐</div>
+          <h3 class="text-xl font-semibold mt-2">Web Development</h3>
+        </div>
+        <div data-aos="zoom-in">
+          <div class="text-5xl text-teal-400">⚙</div>
+          <h3 class="text-xl font-semibold mt-2">Problem Solving</h3>
+        </div>
+        <div data-aos="zoom-in">
+          <div class="text-5xl text-teal-400">📋</div>
+          <h3 class="text-xl font-semibold mt-2">Project Management</h3>
+        </div>
+        <div data-aos="zoom-in">
+          <div class="text-5xl text-teal-400">🤝</div>
+          <h3 class="text-xl font-semibold mt-2">Communication Skills</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10" data-aos="fade-right">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-4 rounded-lg" data-aos="fade-up">
+          <h3 class="text-xl font-semibold bg-black">Education Platform</h3>
+          <p class="mt-2">An Education Platform using Html,Css,Bootstrap.</p>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8TCEogOTB78C-py5F3B4a0j_dkX5DPFFsQ&s" alt="">
+          <a href="https://edu-kappa-roan.vercel.app/">click here</a>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg" data-aos="fade-up">
+          <h3 class="text-xl font-semibold">Group Project</h3>
+          <p class="mt-2">A description of your second amazing project.</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg" data-aos="fade-up">
+          <h3 class="text-xl font-semibold">Project 3</h3>
+          <p class="mt-2">A description of your third amazing project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- getintouch -->
+  <section id="contact" class="bg-gray-100 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Get in Touch</h2>
+      <p class="text-center text-gray-600 mb-8">
+        I'd love to hear from you! Feel free to reach out for collaborations, inquiries, or just to say hi.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Contact Info</h3>
+          <p class="text-gray-600 mb-2"><strong>Email:</strong> yourname@example.com</p>
+          <p class="text-gray-600 mb-2"><strong>Phone:</strong> +123 456 7890</p>
+          <p class="text-gray-600 mb-4"><strong>Location:</strong> Your City, Country</p>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Connect with Me</h3>
+          <div class="flex space-x-4">
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              class="text-gray-600 hover:text-gray-800 transition duration-300"
+            >
+              <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0C5.371 0 0 5.373 0 12c0 5.301 3.438 9.799 8.205 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.832 2.809 1.303 3.495.996.108-.775.418-1.303.76-1.603-2.665-.303-5.467-1.334-5.467-5.934 0-1.311.469-2.383 1.235-3.223-.123-.302-.535-1.523.118-3.176 0 0 1.006-.323 3.3 1.23a11.495 11.495 0 0 1 3-.405c1.02.005 2.045.138 3 .405 2.292-1.553 3.297-1.23 3.297-1.23.654 1.653.242 2.874.119 3.176.768.84 1.232 1.912 1.232 3.223 0 4.61-2.807 5.625-5.48 5.922.43.37.823 1.102.823 2.222v3.293c0 .319.192.694.801.577C20.565 21.798 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yourusername"
+              target="_blank"
+              class="text-gray-600 hover:text-gray-800 transition duration-300"
+            >
+              <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.253c-.967 0-1.75-.787-1.75-1.753s.783-1.754 1.75-1.754 1.75.788 1.75 1.754-.783 1.753-1.75 1.753zm13.5 10.253h-3v-4.5c0-1.104-.896-2-2-2s-2 .896-2 2v4.5h-3v-9h3v1.465c.837-1.217 2.28-1.965 3.737-1.965 2.757 0 5 2.243 5 5v4.5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-md">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-medium">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full mt-1 p-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-medium">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full mt-1 p-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-medium">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full mt-1 p-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              placeholder="Write your message"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 transition duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="py-4 bg-gray-800 text-center">
+    <p class="text-gray-500">© 2024 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
